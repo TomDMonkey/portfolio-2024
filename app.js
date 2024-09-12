@@ -137,8 +137,8 @@ class TextScramble {
   const phrases = [
     "J'ai 19 ans",
     "Et je suis étudiant ",
-    "en système numérique informatique et réseau.",
-    "Voici mon portfolio. :3",
+    "en formation d'ingénieur au CNAM.",
+    "Voici mon portfolio.",
     "Bonne visite !",
   ];
   

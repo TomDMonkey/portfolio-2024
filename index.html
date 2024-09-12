@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Droguerie Lorguaise</title>
+    <title>Portfolio</title>
     <link rel="shortcut icon" href="img/magasin.png" type="image/x-icon" />
     <meta
       name="google-site-verification"
@@ -27,6 +27,7 @@
   <body>
     <!-- -----------------MENU---------------------->
     <section class="et-hero-tabs">
+
       <div class="header-text">
         <h1>
           Bonjour, je m'appelle <span>Tom</span>
@@ -35,12 +36,22 @@
           </div>
         </h1>
       </div>
-
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      style="position: absolute; bottom: 0px"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill="#3fbea3"
+        fill-opacity="1"
+        d="M0,224L48,240C96,256,192,288,288,282.7C384,277,480,235,576,224C672,213,768,235,864,250.7C960,267,1056,277,1152,272C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
       <div class="et-hero-tabs-container">
-        <a class="et-hero-tab menuhidden" href="#1">Biographie</a>
-        <a class="et-hero-tab menuhidden" href="#2">Mon parcours</a>
-        <a class="et-hero-tab menuhidden" href="#3">Mes compétences</a>
-        <a class="et-hero-tab menuhidden" href="#4">Portfolio</a>
+        <a class="et-hero-tab menuhidden" href="#a">Biographie</a>
+        <a class="et-hero-tab menuhidden" href="#b">Mon parcours</a>
+        <a class="et-hero-tab menuhidden" href="#c">Mes compétences</a>
+        <a class="et-hero-tab menuhidden" href="#d">Portfolio</a>
         <span class="et-hero-tab-slider"></span>
 
         <div class="hamhidden">
@@ -76,7 +87,7 @@
     </section>
 
     <!-- biographie -->
-    <section class="et-slide" id="1">
+    <section class="et-slide" id="a">
       <div class="box">
         <img src="image/image0.png" alt="Description de l'image" />
         <div class="barre"></div>
@@ -102,10 +113,7 @@
         </div>
         <div class="jsp">
           <div class="box_icon"><i class="fa-solid fa-phone"></i></div>
-          <div class="info">
-            Mobile : 
-            06 99 80 11 27
-          </div>
+          <div class="info">Mobile : 06 99 80 11 27</div>
         </div>
         <div class="jsp">
           <div class="box_icon"><i class="fa-solid fa-calendar-days"></i></div>
@@ -141,7 +149,7 @@
       </div>
     </section>
     <!-- ----------------------parcours--------------------- -->
-    <section class="et-slide" id="2">
+    <section class="et-slide" id="b">
       <div class="container">
         <div class="ligne"></div>
 
@@ -197,11 +205,16 @@
           <p><strong>De</strong> juillet 2023 <strong>à</strong> août 2023</p>
           <p>Picotte Provence, Cotignac</p>
         </div>
+        <div class="experience"></div>
+          <div class="point"></div>
+          <p><strong>De</strong> juin 2024 <strong>à</strong> août 2024</p>
+          <p>Picotte Provence, Cotignac</p>
+        </div>
       </div>
     </section>
 
     <!-- ----------------- competences--------------- -->
-    <section class="et-slide" id="3">
+    <section class="et-slide" id="c">
       <div class="title_comp"><h1>Mes compétences</h1></div>
 
       <div class="text_competence">
@@ -211,7 +224,7 @@
         <br /><br />
         J'ai également acquis des compétences pratiques dans des langages de
         programmation tels que PHP et SQL pour le développement côté serveur.<br /><br />
-        En parallèle, j'ai exploré les langages de programmation comme Python et
+        En parallèle, j'ai exploré les langages de programmation comme Python C et
         C++, notamment dans le contexte de la robotique, bien que je ne prétende
         pas à une expertise avancée dans ces domaines.<br /><br />
         Mon parcours d'étudiant m'a permis de développer une compréhension
@@ -463,53 +476,52 @@ window.onload = function () {
     </section>
 
     <!-- -------------------- portfolio-------------------------- -->
-    <section class="et-slide2" id="4">
+    <section class="et-slide2" id="d">
       <h1>Mes projets</h1>
-      <div class="services-list">
-        <div>
-          <a
-            href="https://tomdmonkey.github.io/droguerie-lorgues/"
-            target="_blank"
-          >
-            <h2>Droguerie Lorguaise</h2>
-            <p>Rework du site de la droguerie de Lorgues</p>
-            <img src="./image/droguerie.png" loading="lazy" />
-          </a>
-        </div>
+      <div class="boxbox">
+        <div class="services-list">
+          <div>
+            <a href="https://github.com/TomDMonkey/projet_i3d" target="_blank">
+              <h2>Projet final BTS</h2>
+              <p>
+                Menu python pour gérer la liaison entre le bras niryo NED 2 et
+                le raspberry sous octoprint avec l'imprimante 3d. FABLAB 4.0.
+              </p>
+              <img src="./image/octoprint.png" loading="lazy" />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://tomdmonkey.github.io/droguerie-lorgues/"
+              target="_blank"
+            >
+              <h2>Droguerie Lorguaise</h2>
+              <p>Rework du site de la droguerie de Lorgues</p>
+              <img src="./image/droguerie.png" loading="lazy" />
+            </a>
+          </div>
 
-        <div>
-          <a
-            href="https://tomdmonkey.github.io/box-like-codepen/"
-            target="_blank"
-          >
-            <h2>IDE mac</h2>
-            <p>
-              J'ai repris le CMD Mac et l'ai modifié pour qu'il puisse
-              interpréter du code dans une page web dynamiquement.
-            </p>
-            <img src="./image/codepen.png" loading="lazy" />
-          </a>
-        </div>
-      </div>
-
-      <div class="services-list">
-        <div>
-          <a href="https://github.com/TomDMonkey/projet_i3d" target="_blank">
-            <h2>Projet final BTS</h2>
-            <p>
-              Menu python pour gérer la liaison entre le bras niryo NED 2 et le
-              raspberry sous octoprint avec l'imprimante 3d. FABLAB 4.0.
-            </p>
-            <img src="./image/octoprint.png" loading="lazy" />
-          </a>
-        </div>
-
-        <div>
-          <a href="https://github.com/TomDMonkey" target="_blank">
-            <h2>Github</h2>
-            <p>Retrouvez d'autre créations ici</p>
-            <img src="./image/git.jpg" loading="lazy" />
-          </a>
+          <div>
+            <a
+              href="https://tomdmonkey.github.io/box-like-codepen/"
+              target="_blank"
+            >
+              <h2>IDE mac</h2>
+              <p>
+                J'ai repris le CMD Mac et l'ai modifié pour qu'il puisse
+                interpréter du code dans une page web dynamiquement.
+              </p>
+              <img src="./image/codepen.png" loading="lazy" />
+            </a>
+          </div>
+        
+          <div>
+            <a href="https://github.com/TomDMonkey" target="_blank">
+              <h2>Github</h2>
+              <p>Retrouvez d'autre créations ici</p>
+              <img src="./image/git.jpg" loading="lazy" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -518,12 +530,7 @@ window.onload = function () {
     <div class="footer">
       <div>
         ©2024 Portfolio. Created by Tom D. Monkey &nbsp
-        <a
-          href="https://www.instagram.com/_sweety_riv_/"
-          style="color: rgb(255, 255, 255)"
-        >
-          <i class="fa-brands fa-instagram"></i
-        ></a>
+       
         <a
           href="https://github.com/TomDMonkey"
           style="color: rgb(255, 255, 255)"
@@ -533,17 +540,7 @@ window.onload = function () {
       </div>
     </div>
 
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      style="position: absolute; bottom: 50px"
-      viewBox="0 0 1440 320"
-    >
-      <path
-        fill="#3fbea3"
-        fill-opacity="1"
-        d="M0,224L48,240C96,256,192,288,288,282.7C384,277,480,235,576,224C672,213,768,235,864,250.7C960,267,1056,277,1152,272C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-      ></path>
-    </svg>
+   
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
