@@ -516,6 +516,55 @@ body .footer {
   height: 60vw;
 }
 
+
+
+.mouse--scroll,
+.mouse--scroll:before {
+  position:absolute;
+   font-size: 62.5%;
+  --c-light: rgb(233, 233, 233);
+
+}
+
+.mouse--scroll {
+  border: 1px solid var(--c-light);
+  border-radius: 2.5rem;
+  width: 3rem;
+  height: 5rem;
+  top: 60%;
+  left: 49%;
+  
+  &:before {
+    content: "";
+    width: .6rem;
+    height: .6rem;
+    background: var(--c-light);
+    margin-left: -.3rem;
+    top: .8rem;
+    border-radius: .3rem;
+    animation-name: scroll-dot;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes scroll-dot {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+}
+
+
+
+
+
+
+
 /*###############RESPONSIVE#############*/
 
 @media only screen and (max-width: 1650px) {
@@ -647,6 +696,11 @@ body .footer {
     left: 40%;
     top: 70%;
   }
+
+.mouse--scroll{
+  display: none;
+}
+
 }
 
 @media only screen and (max-width: 625px) {
